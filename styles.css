@@ -1,0 +1,121 @@
+/* fonte */
+/* Variabler til farver */
+
+:root {
+  --blue: #162138;
+  --pink: #eb97b3;
+  --lightblue: #2a3857;
+}
+@font-face {
+  font-family: "Leiko-Regular";
+  src: url("font/Leiko-Regular.otf") format("truetype");
+}
+@font-face {
+  font-family: "Ade";
+  src: url("fonts/Ade.otf") format("truetype");
+}
+@font-face {
+  font-family: "MoskNormal";
+  src: url("font/MoskNormal.ttf") format("truetype");
+}
+/* reset og genrelt*/
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0 auto;
+  max-width: 1200px;
+  background-color: var(--blue);
+}
+main {
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 10%;
+  align-content: center;
+}
+img {
+  display: block;
+  width: 70%;
+  height: auto;
+  margin: 15%;
+  margin-left: 30%;
+}
+p,
+h1,
+h2,
+ul,
+a {
+  color: var(--pink);
+}
+h1 {
+  font-family: "Leiko-Regular";
+  font-size: 225%;
+  align-self: start;
+}
+ul {
+  list-style-type: "- ";
+}
+
+.grid7 {
+  margin-top: 15%;
+}
+
+/* Harmonika, accordion */
+.accordion-header {
+  background-color: var(--lightblue);
+  padding: 4%;
+  cursor: pointer;
+  border: 1px solid var(--blue);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordion-content {
+  display: none;
+  padding: 5%;
+  border: 1px solid var(--lightblue);
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
+}
+
+.accordion-content.active {
+  display: block;
+}
+
+.accordion-item {
+  background-color: var(--lightblue);
+}
+
+.arrow {
+  max-width: 5%;
+  max-height: 5%;
+  margin: 0%;
+  float: right;
+}
+
+/* Marquee */
+.marquee-container {
+  overflow: hidden;
+  border: 1px solid #ccc; /* Border style */
+  padding: 5px; /* Add padding for spacing */
+  background-color: #f0f0f0; /* Background color */
+}
+
+.marquee {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
