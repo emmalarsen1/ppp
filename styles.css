@@ -6,18 +6,7 @@
   --pink: #eb97b3;
   --lightblue: #2a3857;
 }
-@font-face {
-  font-family: "Leiko-Regular";
-  src: url("font/Leiko-Regular.otf") format("truetype");
-}
-@font-face {
-  font-family: "Ade";
-  src: url("fonts/Ade.otf") format("truetype");
-}
-@font-face {
-  font-family: "MoskNormal";
-  src: url("font/MoskNormal.ttf") format("truetype");
-}
+
 /* reset og genrelt*/
 * {
   margin: 0;
@@ -47,9 +36,10 @@ h2,
 ul,
 a {
   color: var(--pink);
+  font-family: "Darker Grotesque";
 }
 h1 {
-  font-family: "Leiko-Regular";
+  font-family: "Inter";
   font-size: 225%;
   align-self: start;
 }
@@ -58,7 +48,13 @@ ul {
 }
 
 .grid7 {
+  font-size: 1rem;
   margin-top: 15%;
+  line-height: 2rem;
+  margin-bottom: 15%;
+  a {
+    font-size: 1.5rem;
+  }
 }
 
 /* Harmonika, accordion */
